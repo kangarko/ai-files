@@ -1,6 +1,6 @@
 # AI Files
 
-VS Code + GitHub Copilot configuration that makes AI agents follow strict coding conventions and produce production-quality code.
+Opinionated VS Code + GitHub Copilot configuration that makes AI agents follow strict coding conventions and produce production-quality code.
 
 | File | Purpose |
 |------|---------|
@@ -90,5 +90,3 @@ Fork this repo and adapt to your stack:
 ```bash
 cd ~/dotfiles && git pull
 ```
-
-VS Code picks up instruction file changes automatically — no restart needed.
