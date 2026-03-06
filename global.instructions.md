@@ -35,6 +35,7 @@ Output "Read global." to chat to acknowledge your read this file.
 - When starting long-running server processes (Java servers, dev servers, etc.) from a terminal, ALWAYS redirect output to a log file AND close stdin to prevent VS Code's terminal output monitor from detecting false input prompts: `command > /tmp/server.log 2>&1 < /dev/null &`, and ALWAYS use isBackground: true. Then read the log file with `tail` or `cat` to check output
 - When reading skills, you MUST read the entire file in FULL
 - When I say "deepsearch", perform at least 5-8 web searches using tavily with varied queries, exploring every angle, synonym, related term, and adjacent topic. Do NOT stop after 2-3 searches. Keep going until results fully repeat with nothing new. Use different phrasings, specific names, niche forums, GitHub forks, PRs, and alternate keywords for each query batch
+- For PDF text extraction, use PyMuPDF (`import fitz`) — not PyPDF2 (deprecated). Installed at ~/Library/Python/3.14/lib/
 </general>
 
 <css>
