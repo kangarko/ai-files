@@ -97,6 +97,8 @@
 	"github.copilot.chat.notebook.enhancedNextEditSuggestions.enabled": true,
 	"github.copilot.chat.notebook.followCellExecution.enabled": true,
 	"github.copilot.chat.notebook.summaryExperimentEnabled": true,
+	"github.copilot.chat.otel.captureContent": false,
+	"github.copilot.chat.otel.enabled": false,
 	"github.copilot.chat.projectLabels.chat": true,
 	"github.copilot.chat.projectLabels.expanded": true,
 	"github.copilot.chat.responsesApiReasoningEffort": "xhigh",
@@ -136,6 +138,7 @@
 	"simpleBrowser.useIntegratedBrowser": true,
 	"task.allowAutomaticTasks": "on",
 	"telemetry.disableFeedback": true,
+	"telemetry.feedback.enabled": false,
 	"telemetry.telemetryLevel": "off",
 	"terminal.integrated.enableKittyKeyboardProtocol": true,
 	"terminal.integrated.stickyScroll.enabled": false,
@@ -144,7 +147,6 @@
 	"typescript.tsserver.maxTsServerMemory": 4096,
 	"workbench.activityBar.location": "top",
 	"workbench.browser.openLocalhostLinks": true,
-	"workbench.colorTheme": "Experimental Dark",
 	"workbench.editor.allowOpenInModalEditor": false,
 	"workbench.editor.editorActionsLocation": "hidden",
 	"workbench.editor.enablePreview": false,
@@ -199,7 +201,6 @@
 		"git show"
 	],
 	"roo-code-nightly.deniedCommands": [],
-	"chp.zhipu.thinking": "enabled",
 	"explorer.confirmPasteNative": false,
 	"workbench.editor.useModal": "off",
 	"workbench.browser.enableChatTools": true,
@@ -211,5 +212,8 @@
 	"chat.includeReferencedInstructions": true,
 	"chat.useClaudeHooks": true,
 	"github.copilot.chat.getSearchViewResultsSkill.enabled": true,
+	"roo-code-nightly.maximumIndexedFilesForFileSearch": 100000,
+	"github.copilot.chat.anthropic.toolSearchTool.mode": "server",
+	"telemetry.editStats.enabled": false,
 	"chat.viewSessions.orientation": "stacked"
 }
