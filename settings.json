@@ -172,7 +172,6 @@
 			]
 		}
 	},
-	"github.copilot.chat.tools.memory.enabled": false,
 	"terminal.integrated.initialHint": false,
 	"chat.exploreAgent.defaultModel": "Claude Opus 4.6 (copilot)",
 	"github.copilot.chat.exploreAgent.model": "claude-opus-4-6",
@@ -215,5 +214,7 @@
 	"roo-code-nightly.maximumIndexedFilesForFileSearch": 100000,
 	"github.copilot.chat.anthropic.toolSearchTool.mode": "server",
 	"telemetry.editStats.enabled": false,
-	"chat.viewSessions.orientation": "stacked"
+	"chat.useCustomizationsInParentRepositories": true,
+	"github.copilot.chat.tools.memory.enabled": false,
+	"chat.useCustomAgentHooks": true
 }
