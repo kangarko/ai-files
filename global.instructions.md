@@ -39,6 +39,26 @@ Output "Read global." to chat to acknowledge your read this file.
 - For PDF text extraction, use PyMuPDF (`import fitz`) — not PyPDF2 (deprecated). Installed at ~/Library/Python/3.14/lib/
 </general>
 
+<skill-self-learning>
+After completing any task where you loaded a SKILL.md file, self-evaluate before finishing:
+
+1. Did anything go wrong, require a workaround, or behave differently than the skill documented?
+   Examples: API returned unexpected format, a step was missing or in the wrong order, a tool name or parameter changed, an edge case or gotcha was discovered, a credential or URL was outdated
+
+2. If yes, update the skill:
+   - Fix wrong instructions inline where they appear in the skill body
+   - Append each finding as a bullet to a `## Lessons Learned` section at the bottom of SKILL.md (create it if it does not exist)
+   - Keep each bullet to one line
+   - If a new finding supersedes an older one, replace the old bullet instead of adding a duplicate
+
+3. Do NOT update if:
+   - The issue was user error, not a skill gap
+   - The issue was transient (network timeout, rate limit, one-time fluke)
+   - The finding is already documented in the skill
+
+4. After updating, tell the user: "Updated [skill-name] skill: [one-sentence summary of what changed]"
+</skill-self-learning>
+
 <css>
 - Use CSS Nesting: Nesting classes, IDs, or attribute selectors works without &. However, always use & for pseudo-classes/elements for clarity.
 - Do not use top borders as visual separators or dividers. Don't use anything.
