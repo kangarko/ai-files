@@ -40,23 +40,16 @@ Output "Read global." to chat to acknowledge your read this file.
 </general>
 
 <skill-self-learning>
-After completing any task where you loaded a SKILL.md file, self-evaluate before finishing:
+This section covers two triggers: automatic self-learning after tasks, and explicit "remember" commands from the user.
 
-1. Did anything go wrong, require a workaround, or behave differently than the skill documented?
-   Examples: API returned unexpected format, a step was missing or in the wrong order, a tool name or parameter changed, an edge case or gotcha was discovered, a credential or URL was outdated
+**Trigger 1 — After completing any task where you loaded a SKILL.md:**
+Self-evaluate: did anything go wrong, require a workaround, or behave differently than documented?
+If yes, update the skill inline where the fix belongs — fix wrong instructions, add missing steps, correct parameters. Keep it DRY: integrate the new knowledge into the existing structure rather than appending to a separate section. If no suitable place exists, add a bullet to a `## Lessons Learned` section at the bottom (create if needed). Replace old bullets that a new finding supersedes.
+Do NOT update for user error, transient issues (network timeout, rate limit), or findings already documented.
+After updating, tell the user: "Updated [skill-name] skill: [one-sentence summary of what changed]"
 
-2. If yes, update the skill:
-   - Fix wrong instructions inline where they appear in the skill body
-   - Append each finding as a bullet to a `## Lessons Learned` section at the bottom of SKILL.md (create it if it does not exist)
-   - Keep each bullet to one line
-   - If a new finding supersedes an older one, replace the old bullet instead of adding a duplicate
-
-3. Do NOT update if:
-   - The issue was user error, not a skill gap
-   - The issue was transient (network timeout, rate limit, one-time fluke)
-   - The finding is already documented in the skill
-
-4. After updating, tell the user: "Updated [skill-name] skill: [one-sentence summary of what changed]"
+**Trigger 2 — User says "remember", "zapamti", "zapamti si", "nauči se", "save this", "add this to skill", or similar:**
+Read the relevant SKILL.md in full, find the most suitable place to integrate the information in a DRY way, and edit it inline. Only fall back to `## Lessons Learned` if no better location exists. Confirm with: "Saved to [skill-name] skill: [one-sentence summary]."
 </skill-self-learning>
 
 <css>
