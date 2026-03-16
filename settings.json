@@ -1,6 +1,5 @@
 {
 	"chat.agent.maxRequests": 100000,
-	"chat.agent.thinking.collapsedTools": "withThinking",
 	"chat.agent.thinkingStyle": "collapsedPreview",
 	"chat.checkpoints.showFileChanges": true,
 	"chat.customAgentInSubagent.enabled": true,
@@ -14,15 +13,25 @@
 	"chat.mcp.discovery.enabled": {
 		"claude-desktop": true
 	},
-	"chat.planAgent.defaultModel": "Claude Opus 4.6 (copilot)",
+	"chat.planAgent.defaultModel": "Claude Opus 4.6 (fast mode) (Preview) (copilot)",
 	"chat.requestQueuing.defaultAction": "queue",
 	"chat.tools.global.autoApprove": true,
 	"chat.useAgentSkills": true,
 	"chat.useNestedAgentsMdFiles": true,
 	"claudeCode.allowDangerouslySkipPermissions": true,
+	"claudeCode.environmentVariables": [
+		{
+			"name": "DISABLE_AUTO_COMPACT",
+			"value": "true"
+		},
+		{
+			"name": "CLAUDE_AUTOCOMPACT_PCT_OVERRIDE",
+			"value": "95"
+		}
+	],
 	"claudeCode.initialPermissionMode": "bypassPermissions",
 	"claudeCode.preferredLocation": "sidebar",
-	"claudeCode.selectedModel": "opus",
+	"claudeCode.selectedModel": "opus[1m]",
 	"diffEditor.experimental.showMoves": true,
 	"diffEditor.ignoreTrimWhitespace": false,
 	"diffEditor.maxComputationTime": 0,
@@ -120,7 +129,7 @@
 	"github.copilot.nextEditSuggestions.enabled": true,
 	"github.copilot.nextEditSuggestions.extendedRange": true,
 	"inlineChat.affordance": "editor",
-	"inlineChat.defaultModel": "Claude Opus 4.6 (copilot)",
+	"inlineChat.defaultModel": "Claude Opus 4.6 (fast mode) (Preview) (copilot)",
 	"inlineChat.enableV2": true,
 	"intelephense.compatibility.correctForArrayAccessArrayAndTraversableArrayUnionTypes": false,
 	"js/ts.implicitProjectConfig.checkJs": true,
@@ -158,23 +167,23 @@
 	"chat.mcp.serverSampling": {
 		"Global in Code - Insiders: canva": {
 			"allowedModels": [
-				"copilot/claude-opus-4.6"
+				"copilot/claude-opus-4.6-fast"
 			]
 		},
 		"GitHub: GitHub": {
 			"allowedModels": [
-				"copilot/claude-opus-4.6"
+				"copilot/claude-opus-4.6-fast"
 			]
 		},
 		"Global in Code - Insiders: io.github.tavily-ai/tavily-mcp": {
 			"allowedModels": [
-				"copilot/claude-opus-4.6"
+				"copilot/claude-opus-4.6-fast"
 			]
 		}
 	},
 	"terminal.integrated.initialHint": false,
-	"chat.exploreAgent.defaultModel": "Claude Opus 4.6 (copilot)",
-	"github.copilot.chat.exploreAgent.model": "claude-opus-4-6",
+	"chat.exploreAgent.defaultModel": "Claude Opus 4.6 (fast mode) (Preview) (copilot)",
+	"github.copilot.chat.exploreAgent.model": "claude-opus-4-6-fast",
 	"editor.wordWrap": "on",
 	"explorer.confirmDragAndDrop": false,
 	"terminal.integrated.enableImages": true,
@@ -216,5 +225,7 @@
 	"telemetry.editStats.enabled": false,
 	"chat.useCustomizationsInParentRepositories": true,
 	"github.copilot.chat.tools.memory.enabled": false,
-	"chat.useCustomAgentHooks": true
+	"chat.useCustomAgentHooks": true,
+	"update.titleBar": "none",
+	"update.statusBar": "hidden"
 }
