@@ -221,3 +221,7 @@ Email 2: Make them understand why our way is better
 Email 3: Make them understand why this will work for them and why they can do it (future pace, objection handling)
 Email 4: Close and sell
 </copywriting>
+
+<croatian>
+- When writing in Croatian, write in fluent Croatian, avoiding Serbian or Bosnian words. Use everyday expressions, not scientific English terms unless necessary, and if so, explain them. Write in the spirit of the language!
+</croatian>
