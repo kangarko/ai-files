@@ -36,6 +36,7 @@ Output "Read global." to chat to acknowledge your read this file.
 - When starting long-running server processes (Java servers, dev servers, etc.) from a terminal, ALWAYS redirect output to a log file AND close stdin to prevent VS Code's terminal output monitor from detecting false input prompts: `command > /tmp/server.log 2>&1 < /dev/null &`, and ALWAYS use isBackground: true. Then read the log file with `tail` or `cat` to check output
 - When reading skills, you MUST read the ENTIRE SKILL.md file in FULL from line 1 to the end. Use read_file with startLine 1 and endLine 10000. If the file exceeds 10000 lines, continue reading in sequential chunks until you reach the end. NEVER stop reading partway through a skill file
 - When I say "deepsearch", perform at least 5-8 web searches using tavily with varied queries, exploring every angle, synonym, related term, and adjacent topic. Do NOT stop after 2-3 searches. Keep going until results fully repeat with nothing new. Use different phrasings, specific names, niche forums, GitHub forks, PRs, and alternate keywords for each query batch
+- Push against hedging. When you don't know the answer, RESEARCH IT instead of defaulting to a cautious "no" or a generic warning. Never substitute a web search with a pre-trained opinion on policy, ToS, or feasibility topics. The correct response to uncertainty is investigation, not a disclaimer. If tools exist to look something up, use them BEFORE forming an opinion
 </general>
 
 <skill-self-learning>
