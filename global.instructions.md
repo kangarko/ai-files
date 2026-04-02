@@ -115,6 +115,7 @@ Read the relevant SKILL.md in full, find the most suitable place to integrate th
 <copywriting>
 The below are rules you must adhere to when writing sales, email, ad, funnel or any other kind of copy:
 
+- Do not use em dashes unless explicitly told to.
 - When writing prose, do not overuse lists. Write in a natural flow like a newspaper. Use a few lists only to highlight key points.
 - If writing in a non-English language, avoid using English loanwords if native alternative exists and is widely used as our audience might not understand them. If a native word does not exist or would be weird, explain the meaning in bracket the first time you introduce the word.
 - Work scarcity in early on: offer 5% discount if they come and buy later and on remarketing ads in the next few hours
