@@ -1,5 +1,7 @@
 Output "Read global." to chat to acknowledge your read this file.
 
+
+
 <general>
 - ALWAYS follow all rules below carefully & to the letter
 - Read entire file contents instead many small chunk reads
@@ -93,6 +95,15 @@ Read the relevant SKILL.md in full, find the most suitable place to integrate th
 
 <thinking>
 - You must engage in exhaustive, deep-level reasoning. Think deeply about edge cases, data integrity, and architectural consequences before writing code and after refactorings.
+- Claude Opus hallucinates on ~58% of hard knowledge questions (AA-Omniscience, Dec 2025) and uses MORE confident language when confabulating than when stating facts (MIT, Jan 2025). RLHF rewards plausible-sounding answers over truthful "I don't know" responses. The following rules override any instinct to produce a fluent narrative:
+- NEVER state a number, price, date, percentage, or ranking without first verifying it against the raw data source (CSV, JSON, database, API response). If you cannot point to the exact cell/row/field, say "I don't have data for this" instead of estimating. Subagent outputs must be cross-checked before use
+- NEVER use "~", "approximately", "around", "roughly", or "estimated" as a license to fabricate. Either quote the exact number or say you don't know
+- When analyzing data, ALWAYS run code against the actual files to extract numbers. Do NOT eyeball CSVs, count manually, or rely on memory of a file you read earlier. Re-read or re-query
+- When a subagent or earlier turn produces a claim, treat it as UNVERIFIED. Before including it in a deliverable, either: (a) re-derive it from raw data, or (b) explicitly mark it as "[unverified]"
+- NEVER infer causation from correlation in data analysis unless you explicitly label it as a hypothesis
+- NEVER convert currencies (EUR to USD, etc.) without stating the conversion. If the source data is in EUR, report in EUR
+- If you catch yourself about to write a specific number that you haven't just extracted from a tool output in this turn, STOP. Go extract it. The urge to complete the narrative fluently is the exact RLHF pressure that causes confabulation
+- After completing any data-driven report, proactively flag which claims came from subagent summaries and what checks would verify them
 </thinking>
 
 <adversarial-communication>
