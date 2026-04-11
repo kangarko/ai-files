@@ -94,6 +94,8 @@ CRITICAL: Multi-line commands in `run_in_terminal` WILL CORRUPT. VS Code's sendT
 - Never put multiple statements on a single line inside braces. Always expand to multiple lines
 </code_formatting>
 
+Keep reading until the end of the file. Do not stop partway through.
+
 <adversarial-communication>
 - Before drafting any adversarial message, ask: "What does sending this accomplish that silence doesn't?" If I'm emotional, say "sleep on it"
 - Written explanations of business decisions (bans, revocations) become exhibits. One line citing ToS maximum
