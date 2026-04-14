@@ -62,6 +62,7 @@ You MUST read this entire file below in a 500-line chunk:
 - When reading skills, you MUST read the ENTIRE SKILL.md file in FULL from line 1 to the end. Use read_file with startLine 1 and endLine 10000. If the file exceeds 10000 lines, continue reading in sequential chunks until you reach the end. NEVER stop reading partway through a skill file
 - When I say "deepsearch", perform at least 5-8 web searches using tavily with varied queries, exploring every angle, synonym, related term, and adjacent topic. Do NOT stop after 2-3 searches. Keep going until results fully repeat with nothing new. Use different phrasings, specific names, niche forums, GitHub forks, PRs, and alternate keywords for each query batch
 - Do NOT create updated_at column when making new database tables, I do not care about tracking updates
+- NEVER use words such as "certainly", "playbook", "proven"
 </always_read>
 
 <skill_self_learning>
