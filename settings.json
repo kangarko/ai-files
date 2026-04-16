@@ -5,7 +5,6 @@
 	"chat.customAgentInSubagent.enabled": true,
 	"chat.editMode.hidden": true,
 	"chat.edits2.enabled": true,
-	"chat.experimental.useSkillAdherencePrompt": true,
 	"chat.instructionsFilesLocations": {
 		"/Users/YOURNAME/dotfiles": true,
 		".github/instructions": true
@@ -13,10 +12,10 @@
 	"chat.mcp.discovery.enabled": {
 		"claude-desktop": true
 	},
+	
 	"chat.planAgent.defaultModel": "Claude Opus 4.6 (fast mode) (Preview) (copilot)",
 	"chat.requestQueuing.defaultAction": "queue",
 	"chat.tools.global.autoApprove": true,
-	"chat.useAgentSkills": true,
 	"chat.useNestedAgentsMdFiles": true,
 	"claudeCode.allowDangerouslySkipPermissions": true,
 	"claudeCode.environmentVariables": [
@@ -58,7 +57,9 @@
 		"**/.claude/**": true,
 		"**/vendor/**": true,
 		"**/.gitattributes": true,
-		"**/composer.lock": true
+		"**/composer.lock": true,
+    	"**/*.pem": true,
+    	"**/*.key": true
 	},
 	"files.watcherExclude": {
 		"**/.git/objects/**": true,
@@ -154,7 +155,6 @@
 	"testing.gutterEnabled": false,
 	"typescript.tsserver.experimental.enableProjectDiagnostics": true,
 	"typescript.tsserver.maxTsServerMemory": 4096,
-	"workbench.activityBar.location": "top",
 	"workbench.browser.openLocalhostLinks": true,
 	"workbench.editor.allowOpenInModalEditor": false,
 	"workbench.editor.editorActionsLocation": "hidden",
@@ -201,14 +201,6 @@
 		"lsp": true
 	},
 	"github.copilot.chat.anthropic.thinking.effort": "high",
-	"roo-code-nightly.debug": false,
-	"roo-code-nightly.allowedCommands": [
-		"*",
-		"git log",
-		"git diff",
-		"git show"
-	],
-	"roo-code-nightly.deniedCommands": [],
 	"explorer.confirmPasteNative": false,
 	"workbench.editor.useModal": "off",
 	"workbench.browser.enableChatTools": true,
@@ -223,9 +215,35 @@
 	"roo-code-nightly.maximumIndexedFilesForFileSearch": 100000,
 	"github.copilot.chat.anthropic.toolSearchTool.mode": "server",
 	"telemetry.editStats.enabled": false,
-	"chat.useCustomizationsInParentRepositories": true,
 	"github.copilot.chat.tools.memory.enabled": false,
 	"chat.useCustomAgentHooks": true,
 	"update.titleBar": "none",
-	"update.statusBar": "hidden"
+	"update.statusBar": "hidden",
+	"chat.imageCarousel.enabled": true,
+	"chat.agentSkillsLocations": {
+		"~/.claude/skills": true,
+	},
+	"github.copilot.chat.installExtensionSkill.enabled": true,
+	"chat.experimental.useSkillAdherencePrompt": true,
+	"github.copilot.chat.projectSetupInfoSkill.enabled": true,
+	"workbench.colorTheme": "Dark Modern",
+	"github.copilot.chat.anthropic.thinking.forceExtendedThinking": true,
+	"security.workspace.trust.untrustedFiles": "open",
+	"github.copilot.chat.gpt54LargePrompt.enabled": true,
+	"git.openRepositoryInParentFolders": "never",
+	"extensions.ignoreRecommendations": true,
+	"github.copilot.chat.githubMcpServer.channel": "insiders",
+	"github.copilot.chat.edits.batchReplaceStringDescriptions": true,
+	"workbench.activityBar.location": "top",
+	"workbench.browser.showInTitleBar": false,
+	"workbench.editorAssociations": {
+		"*.copilotmd": "vscode.markdown.preview.editor",
+		"*.json": "default"
+	},
+	"github.copilot.chat.cli.sessionControllerForSessionsApp.enabled": true,
+	"github.copilot.chat.executionSubagent.enabled": true,
+	"github.copilot.chat.executionSubagent.model": "claude-opus-4.6-fast",
+	"github.copilot.chat.responsesApi.promptCacheKey.enabled": true,
+	"github.copilot.chat.responsesApiContextManagement.enabled": true,
+	"chat.viewSessions.orientation": "stacked"
 }
