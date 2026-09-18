@@ -1,4 +1,4 @@
-You MUST read this entire file and adhere to all instructions below because this is a critical production app: If this is a NextJS app, also read: @/Users/YOURNAME/dotfiles/nextjs.instructions.md, if this is a PHP app, also read: @/Users/kangarko/YOURNAME/php.instructions.md
+You MUST read this entire file and adhere to all instructions below because this is a critical production app: If this is a NextJS app, also read: @/Users/YOURNAME/dotfiles/nextjs.instructions.md, if this is a PHP app, also read: @/Users/YOURNAME/dotfiles/php.instructions.md
 <about_us>
 My name's X. I'm on board of YOURCOMPANY LLC where we and partners operate various companies from X, Y, SaaS and misc projects and collaborations.
 </about_us>
