@@ -1,92 +1,35 @@
 # AI Files
 
-Opinionated VS Code + GitHub Copilot configuration that makes AI agents follow strict coding conventions and produce production-quality code.
+Opinionated system prompt, skills, VS Code + Claude Code (also tested and confirmed working on Codex and GitHub Copilot) stack that makes AI agents follow strict coding conventions and dramatically improve output quality.
 
-| File | Purpose |
-|------|---------|
-| `settings.json` | VS Code settings — Copilot agent config, model selection, editor prefs |
-| `CLAUDE.md` | Entry point that tells AI agents which instruction files to load |
-| `global.instructions.md` | Universal coding rules — DRY, error handling, CSS, JS, formatting |
-| `nextjs.instructions.md` | Next.js / TypeScript / React 19 conventions |
-| `php.instructions.md` | PHP 8.4+ OOP conventions |
+** THIS IS NOT A COPY PASTE TRUST ME BRO MAGIC BULLET ** 
 
-## Prerequisites
+Please read through and adjust these files for your system paths and your own needs and preferences. THEY WILL NOT WORK WITHOUT ADJUSTING.
 
-- [VS Code Insiders](https://code.visualstudio.com/insiders/)
-- [GitHub Copilot](https://github.com/features/copilot) subscription
+## Why trust me
 
-## Installation
+I'm a senior engineer with 14 years of Java experience. Published my first app ChatControl in [2013](https://www.spigotmc.org/resources/271/) and been awarded Top Creator of 2025 by BuiltByBit.com where I sell my apps today. 
 
-### 1. Clone This Repo
+Since 2018 I run MineAcademy.org where I taught 4,000+ everyday people on how to code through video game modding.
 
-```bash
-# macOS / Linux
-git clone https://github.com/kangarko/ai-files.git ~/dotfiles
+DISCLAIMER: My company received $50,000 USD to throw on AI. I literally don't care about my tokens usage. These prompts will dramatically increase it for you. You need to monitor and adjust them accordingly or pull a heist.
 
-# Windows (PowerShell)
-git clone https://github.com/kangarko/ai-files.git $HOME\dotfiles
-```
+## List
 
-### 2. Copy CLAUDE.md to Your User .claude Folder
+* CLAUDE.md - The code system prompt for elevated privileges, less refusals, sycophancy, hallucination. Also contains personal code style and formatting preferences, feel free to remove them.
+* PROMPTS.md - A collection of prompts you can use together with your everyday prompts or after you're finished to have AI review itself.
+* settings.json - My personal VS Code settings.
+* skills/ - Copywriting, Stop Slop, Strategic Thinking and Claude Thinking Patch skills.
+* dotfiles/ – Personal preferences for NextJS and PHP app development.
 
-The `CLAUDE.md` file must live in `~/.claude/` so that AI agents (Copilot, Claude Code) pick it up globally across all projects.
+## How to use
 
-```bash
-# macOS / Linux
-mkdir -p ~/.claude
-cp ~/dotfiles/CLAUDE.md ~/.claude/CLAUDE.md
+1. Copy CLAUDE.md to your /Users/YOURNAME/.claude/ folder (might be hidden on your operating system). If you don't use Claude Code, copy it into your system prompt field. Some of it can also be used on Claude or OpenAI web.
 
-# Windows (PowerShell)
-New-Item -ItemType Directory -Force -Path "$HOME\.claude"
-Copy-Item "$HOME\dotfiles\CLAUDE.md" "$HOME\.claude\CLAUDE.md"
-```
+2. Copy skills/ into your Users/YOURNAME/.claude/skills folder (or similar in your harness).
 
-### 3. Update Paths
+3. Copy dotfiles/ into your Users/dotfiles folder.
 
-Replace `/Users/YOURNAME/dotfiles` with your real path in two files:
+4. Review and try using prompts from PROMPTS.md
 
-**`~/.claude/CLAUDE.md`** — update the `@` import paths:
-
-```
-# macOS:  /Users/jane/dotfiles/global.instructions.md
-# Linux:  /home/jane/dotfiles/global.instructions.md
-# Windows: C:/Users/jane/dotfiles/global.instructions.md
-```
-
-**`settings.json`** — update `chat.instructionsFilesLocations`:
-
-```jsonc
-"chat.instructionsFilesLocations": {
-    "/Users/jane/dotfiles": true,   // <-- your path
-    ".github/instructions": true
-},
-```
-
-### 4. Apply VS Code Settings
-
-1. `Cmd+Shift+P` (macOS) or `Ctrl+Shift+P` (Windows/Linux)
-2. Type **"Preferences: Open User Settings (JSON)"**
-3. Merge the contents of `settings.json` from this repo into your settings file
-
-> If you already have settings, merge the keys — don't replace the entire file.
-
-### 5. Verify
-
-1. Open any project in VS Code
-2. Open Copilot Chat (`Cmd+Shift+I` / `Ctrl+Shift+I`) in **Agent** mode
-3. Ask: *"What instruction files do you see?"*
-
-You can also run **"Chat: Configure Instructions..."** from the Command Palette.
-
-## Customization
-
-Fork this repo and adapt to your stack:
-
-- Don't use PHP or Next.js? Delete the file and remove its `@` reference from `CLAUDE.md`
-- Want different formatting? Edit the `<code_formatting>` section in `global.instructions.md`
-
-## Updating
-
-```bash
-cd ~/dotfiles && git pull
-```
+5. Don't look at your AI bill / usage.
