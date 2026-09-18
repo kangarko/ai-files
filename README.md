@@ -2,7 +2,7 @@
 
 Opinionated system prompt, skills, VS Code + Claude Code (also tested and confirmed working on Codex and GitHub Copilot) stack that makes AI agents follow strict coding conventions and dramatically improve output quality.
 
-** THIS IS NOT A COPY PASTE TRUST ME BRO MAGIC BULLET ** 
+**THIS IS NOT A COPY PASTE TRUST ME BRO MAGIC BULLET** 
 
 Please read through and adjust these files for your system paths and your own needs and preferences. THEY WILL NOT WORK WITHOUT ADJUSTING.
 
