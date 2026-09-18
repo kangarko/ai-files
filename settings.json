@@ -1,10 +1,6 @@
 {
 	"chat.agent.maxRequests": 100000,
 	"chat.agent.thinkingStyle": "collapsedPreview",
-	"chat.instructionsFilesLocations": {
-		"/Users/YOURNAME/dotfiles": true,
-		".github/instructions": true
-	},
 	"chat.agentHost.opus48Prompt.enabled": true,
 	"chat.agentSessionProjection.enabled": true,
 	"chat.agentSkillsLocations": {
@@ -20,7 +16,7 @@
 	"chat.experimental.incrementalRendering.buffering": "off",
 	"chat.experimental.incrementalRendering.enabled": true,
 	"chat.experimental.useSkillAdherencePrompt": true,
-	"chat.exploreAgent.defaultModel": "Claude Fable 5 (copilot)",
+	"chat.exploreAgent.defaultModel": "Claude Fable 5.1 (copilot)",
 	"chat.growthNotification.enabled": false,
 	"chat.includeReferencedInstructions": true,
 	"chat.instructionsFilesLocations": {
@@ -32,17 +28,17 @@
 	"chat.mcp.serverSampling": {
 		"GitHub: GitHub": {
 			"allowedModels": [
-				"copilot/claude-fable-5"
+				"copilot/claude-fable-5-1"
 			]
 		},
 		"Global in Code - Insiders: io.github.tavily-ai/tavily-mcp": {
 			"allowedModels": [
-				"copilot/claude-fable-5"
+				"copilot/claude-fable-5-1"
 			]
 		}
 	},
 	"chat.permissions.default": "autoApprove",
-	"chat.planAgent.defaultModel": "Claude Fable 5 (copilot)",
+	"chat.planAgent.defaultModel": "Claude Fable 5.1 (copilot)",
 	"chat.progressBorder.enabled": false,
 	"chat.requestQueuing.defaultAction": "queue",
 	"chat.tips.enabled": true,
@@ -52,7 +48,6 @@
 	"chat.useHooks": true,
 	"chat.useNestedAgentsMdFiles": true,
 	"chat.viewProgressBadge.enabled": true,
-	"chat.viewSessions.orientation": "stacked",
 	"claudeCode.allowDangerouslySkipPermissions": true,
 	"claudeCode.initialPermissionMode": "bypassPermissions",
 	"claudeCode.preferredLocation": "sidebar",
@@ -125,11 +120,9 @@
 	"github.copilot.chat.claudeAgent.enabled": false,
 	"github.copilot.chat.claudeAgent.useSdkExtension": true,
 	"github.copilot.chat.cli.autoModel.enabled": false,
-	"github.copilot.chat.cli.branchSupport.enabled": true,
-	"github.copilot.chat.cli.forkSessions.enabled": true,
+	"github.copilot.chat.cli.forkSessions.enabled": false,
 	"github.copilot.chat.cli.mcp.enabled": true,
 	"github.copilot.chat.cli.planCommand.enabled": true,
-	"github.copilot.chat.cli.planExitMode.enabled": true,
 	"github.copilot.chat.cli.remote.enabled": false,
 	"github.copilot.chat.cli.sessionController.enabled": true,
 	"github.copilot.chat.cli.sessionControllerForSessionsApp.enabled": true,
@@ -147,7 +140,6 @@
 	"github.copilot.chat.executionSubagent.useAgenticProxy": true,
 	"github.copilot.chat.exploreAgent.model": "claude-fable-5",
 	"github.copilot.chat.feedback.onChange": true,
-	"github.copilot.chat.gemini3GetChangedFilesTool.enabled": true,
 	"github.copilot.chat.getChangedFilesTool.enabled": true,
 	"github.copilot.chat.githubMcpServer.channel": "insiders",
 	"github.copilot.chat.githubMcpServer.enabled": true,
@@ -205,8 +197,9 @@
 	"github.copilot.nextEditSuggestions.extendedRange": true,
 	"imageCarousel.chat.enabled": true,
 	"inlineChat.affordance": "editor",
-	"inlineChat.defaultModel": "Claude Fable 5 (copilot)",
+	"inlineChat.defaultModel": "Claude Fable 5.1 (copilot)",
 	"intelephense.compatibility.correctForArrayAccessArrayAndTraversableArrayUnionTypes": false,
+	"java.import.gradle.enabled": false,
 	"js/ts.implicitProjectConfig.checkJs": true,
 	"js/ts.suggest.completeFunctionCalls": true,
 	"js/ts.tsserver.experimental.enableProjectDiagnostics": true,
@@ -252,7 +245,6 @@
 	"update.mode": "manual",
 	"update.showReleaseNotes": false,
 	"update.titleBar": false,
-	"workbench.activityBar.location": "top",
 	"workbench.browser.agentHostChatToolsEnabled": true,
 	"workbench.browser.dataStorage": "global",
 	"workbench.browser.enableChatTools": true,
@@ -260,7 +252,7 @@
 	"workbench.browser.openLocalhostLinks": true,
 	"workbench.browser.searchEngine": "duckduckgo",
 	"workbench.browser.showInTitleBar": false,
-	"workbench.colorTheme": "Dark Modern",
+	"workbench.colorTheme": "Monokai",
 	"workbench.editor.editorActionsLocation": "hidden",
 	"workbench.editor.enablePreview": false,
 	"workbench.editor.useModal": "off",
@@ -273,5 +265,20 @@
 	"workbench.reduceMotion": "on",
 	"workbench.startupEditor": "none",
 	"workbench.statusBar.visible": false,
-	"workbench.tree.enableStickyScroll": false
+	"workbench.tree.enableStickyScroll": false,
+	"chat.titleBar.openInAgentsWindow.enabled": false,
+	"github.copilot.chat.claudeOpus5Prompt.enabled": true,
+	"github.copilot.chat.claudeSonnet5Prompt.enabled": true,
+	"chat.editor.preferCopilotHarness": true,
+	"github.copilot.chat.autoMode.v2.enabled": false,
+	"github.copilot.chat.cli.aiGenerateBranchNames.enabled": false,
+	"github.copilot.chat.cli.isolationOption.enabled": false,
+	"github.copilot.chat.copilotDebugCommand.enabled": false,
+	"github.copilot.chat.gemini35FlashReducedToolUsePrompt.enabled": false,
+	"github.copilot.chat.gemini3GetChangedFilesTool.enabled": true,
+	"github.copilot.chat.responsesApi.promptCacheBreakpoint.enabled": true,
+	"chat.titleBar.signIn.enabled": false,
+	"chat.disableAIFeatures": true,
+	"workbench.activityBar.location": "top",
+	"chatgpt.localeOverride": "en-US",
 }
