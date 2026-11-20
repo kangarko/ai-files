@@ -16,7 +16,7 @@
 	"chat.experimental.incrementalRendering.buffering": "off",
 	"chat.experimental.incrementalRendering.enabled": true,
 	"chat.experimental.useSkillAdherencePrompt": true,
-	"chat.exploreAgent.defaultModel": "Claude Fable 5.1 (copilot)",
+	"chat.exploreAgent.defaultModel": "Claude Fable 5.2 (copilot)",
 	"chat.growthNotification.enabled": false,
 	"chat.includeReferencedInstructions": true,
 	"chat.instructionsFilesLocations": {
@@ -28,17 +28,17 @@
 	"chat.mcp.serverSampling": {
 		"GitHub: GitHub": {
 			"allowedModels": [
-				"copilot/claude-fable-5-1"
+				"copilot/claude-fable-5-2"
 			]
 		},
 		"Global in Code - Insiders: io.github.tavily-ai/tavily-mcp": {
 			"allowedModels": [
-				"copilot/claude-fable-5-1"
+				"copilot/claude-fable-5-2"
 			]
 		}
 	},
 	"chat.permissions.default": "autoApprove",
-	"chat.planAgent.defaultModel": "Claude Fable 5.1 (copilot)",
+	"chat.planAgent.defaultModel": "Claude Fable 5.2 (copilot)",
 	"chat.progressBorder.enabled": false,
 	"chat.requestQueuing.defaultAction": "queue",
 	"chat.tips.enabled": true,
@@ -113,7 +113,7 @@
 	"github.copilot.chat.anthropic.tools.websearch.enabled": true,
 	"github.copilot.chat.anthropic.tools.websearch.maxUses": 20,
 	"github.copilot.chat.anthropic.tools.websearch.userLocation": {},
-	"github.copilot.chat.askAgent.model": "claude-fable-5",
+	"github.copilot.chat.askAgent.model": "claude-fable-5-2",
 	"github.copilot.chat.backgroundAgent.enabled": false,
 	"github.copilot.chat.claude47OpusPrompt.enabled": true,
 	"github.copilot.chat.claudeAgent.allowDangerouslySkipPermissions": true,
@@ -135,10 +135,10 @@
 	"github.copilot.chat.edits.gemini3MultiReplaceString": true,
 	"github.copilot.chat.enableUserPreferences": true,
 	"github.copilot.chat.executionSubagent.enabled": true,
-	"github.copilot.chat.executionSubagent.model": "claude-fable-5",
+	"github.copilot.chat.executionSubagent.model": "claude-fable-5-2",
 	"github.copilot.chat.executionSubagent.toolCallLimit": 1000,
 	"github.copilot.chat.executionSubagent.useAgenticProxy": true,
-	"github.copilot.chat.exploreAgent.model": "claude-fable-5",
+	"github.copilot.chat.exploreAgent.model": "claude-fable-5-2",
 	"github.copilot.chat.feedback.onChange": true,
 	"github.copilot.chat.getChangedFilesTool.enabled": true,
 	"github.copilot.chat.githubMcpServer.channel": "insiders",
@@ -181,7 +181,7 @@
 	],
 	"github.copilot.chat.scopeSelection": true,
 	"github.copilot.chat.searchSubagent.enabled": true,
-	"github.copilot.chat.searchSubagent.model": "claude-fable-5",
+	"github.copilot.chat.searchSubagent.model": "claude-fable-5-2",
 	"github.copilot.chat.searchSubagent.thoroughnessEnabled": true,
 	"github.copilot.chat.searchSubagent.toolCallLimit": 1000,
 	"github.copilot.chat.searchSubagent.useAgenticProxy": true,
@@ -197,7 +197,7 @@
 	"github.copilot.nextEditSuggestions.extendedRange": true,
 	"imageCarousel.chat.enabled": true,
 	"inlineChat.affordance": "editor",
-	"inlineChat.defaultModel": "Claude Fable 5.1 (copilot)",
+	"inlineChat.defaultModel": "Claude Fable 5.2 (copilot)",
 	"intelephense.compatibility.correctForArrayAccessArrayAndTraversableArrayUnionTypes": false,
 	"java.import.gradle.enabled": false,
 	"js/ts.implicitProjectConfig.checkJs": true,
